@@ -100,3 +100,28 @@ def sum(x):
 number = int(input("Enter numbers: "))
 result = sum(number)
 print("Summation of numbers is:", result)
+
+# Define a Python function student(). Using function attributes display the names of all arguments.
+def student(id, name):
+    print(f'\nStudents ID is {id} & name is {name}')
+
+student(201902064, "Fahim")
+
+# Write a Python function studentId () which will print the id of a student (studentId). 
+def students(id):
+    students_info = {
+        "201902064" : {"Name" : "Fahim", "Section" : "D3"},
+        "201902073" : {"Name" : "Sk. Nahid", "Section" : "D3"},
+    }
+
+    if id in students_info:
+        info = students_info[id]
+        print(f"\nStudent ID: {id}")
+        print(f"Student Name: {info['Name']}")
+        print(f"Student Section: {info['Section']}")
+    else:
+        print(f'\nNo info for this: {id} ')
+
+students('201902064')
+students('201902073')
+students('201902067')
